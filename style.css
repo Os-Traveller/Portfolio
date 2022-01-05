@@ -1,6 +1,8 @@
 /* ............................ variable ............................ */
 :root {
   --font-col: #FFA500;
+  --bg: #19233C;
+  --bg-2nd: #F9725C;
 }
 /* ............................ base ............................ */
 *,*::before,*::after {
@@ -14,14 +16,39 @@ hmtl {
 }
 body {
   padding: 2rem 4rem;
+  background-color: var(--bg);
+  color: #fff;
+  width: 100vw;
 }
 /* ............................ layout ............................ */
+.header {
+  display: flex;
+  align-items: center;
+  gap:5rem;
+  width: 100%;
+} 
+.headerDp {
+  border-radius: 50%;
+  height: 30rem;
+  width: 30rem;
+  background-color: var(--bg-2nd);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 /* ............................ typography ............................ */
 .title {
   font-size: 3rem;
+  font-weight: 300;
+  margin-bottom: 3rem;
 }
 .title span{
   color: var(--font-col);
+  text-transform: uppercase;
+  word-spacing: 3px;
 }
 /* ............................ utility ............................ */
+.u-margin-top-small {
+  margin-top: 2rem !important;
+}
