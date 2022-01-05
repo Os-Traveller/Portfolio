@@ -1,0 +1,27 @@
+/* ............................ variable ............................ */
+:root {
+  --font-col: #FFA500;
+}
+/* ............................ base ............................ */
+*,*::before,*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+hmtl {
+  font-family: 'Poppins', sans-serif;
+  font-size: 62.5%;
+}
+body {
+  padding: 2rem 4rem;
+}
+/* ............................ layout ............................ */
+
+/* ............................ typography ............................ */
+.title {
+  font-size: 3rem;
+}
+.title span{
+  color: var(--font-col);
+}
+/* ............................ utility ............................ */
